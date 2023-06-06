@@ -1,0 +1,28 @@
+{
+  "components": {
+    "schemas": {
+      "TenantId": {
+        "description": "Unique identifier for tenants",
+        "type": "string"
+      },
+      "TenantType": {
+        "description": "The type of the tenant",
+        "type": "string",
+        "enum": [
+          "MOCK",
+          "OPENID",
+          "SOF",
+          "MDA"
+        ]
+      },
+      "FhirIdFetchType": {
+        "type": "string",
+        "enum": [
+          "SUB",
+          "USER",
+          "USER_PROV_FHIR_ID"
+        ]
+      }
+    }
+  }
+}

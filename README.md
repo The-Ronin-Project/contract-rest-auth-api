@@ -1,6 +1,6 @@
-# Template Project for REST Contracts
+# REST Contract for Auth Service
 
-This repo contains an example of a REST contract repository, to be used as a template repository in GitHub.
+This repo contains the Auth Service REST contract.
 
 # Tools
 

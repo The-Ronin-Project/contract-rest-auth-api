@@ -1,0 +1,152 @@
+{
+  "components": {
+    "schemas": {
+      "Tenant": {
+        "type": "object",
+        "description": "A Tenant of a subtype.",
+        "discriminator": {
+          "propertyName": "tenantType",
+          "mapping": {
+            "MOCK": "#/components/schemas/MockTenant",
+            "OPENID": "#/components/schemas/OpenIdTenant",
+            "SOF": "#/components/schemas/SofTenant",
+            "MDA": "#/components/schemas/MdaTenant"
+          }
+        },
+        "properties": {
+          "id": {
+            "$ref": "simple-types.json#/components/schemas/TenantId"
+          },
+          "name": {
+            "type": "string"
+          },
+          "type": {
+            "$ref": "simple-types.json#/components/schemas/TenantType"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "type"
+        ]
+      },
+      "MockTenant": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/Tenant"
+          }
+        ]
+      },
+      "OpenIdTenant": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/Tenant"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "scopes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "issUrl": {
+                "type": "string"
+              },
+              "redirectUrl": {
+                "type": "string"
+              },
+              "clientId": {
+                "type": "string"
+              },
+              "clientSecret": {
+                "type": "string"
+              },
+              "defaultTimezone": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "scopes",
+              "issUrl",
+              "redirectUrl",
+              "clientId"
+            ]
+          }
+        ]
+      },
+      "SofTenant": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/Tenant"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "scopes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "issUrl": {
+                "type": "string"
+              },
+              "redirectUrl": {
+                "type": "string"
+              },
+              "clientId": {
+                "type": "string"
+              },
+              "clientSecret": {
+                "type": "string"
+              },
+              "providerFhirIdFetchTypes": {
+                "type": "array",
+                "items": {
+                  "$ref": "simple-types.json#/components/schemas/FhirIdFetchType"
+                }
+              },
+              "defaultProviderFhirIdFetchType": {
+                "$ref": "simple-types.json#/components/schemas/FhirIdFetchType"
+              },
+              "defaultTimezone": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "scopes",
+              "issUrl",
+              "redirectUrl",
+              "clientId",
+              "providerFhirIdFetchTypes",
+              "defaultProviderFhirIdFetchType"
+            ]
+          }
+        ]
+      },
+      "MdaTenant": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/Tenant"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "mdaEnvironment": {
+                "type": "string"
+              },
+              "mdaDefaultEnvironment": {
+                "type": "boolean"
+              },
+              "defaultTimezone": {
+                "type": "string"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

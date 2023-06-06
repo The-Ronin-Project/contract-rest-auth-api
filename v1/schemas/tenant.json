@@ -62,6 +62,9 @@
               },
               "clientSecret": {
                 "type": "string"
+              },
+              "defaultTimezone": {
+                "type": "string"
               }
             },
             "required": [
@@ -100,9 +103,15 @@
                 "type": "string"
               },
               "providerFhirIdFetchTypes": {
-                "type": "string"
+                "type": "array",
+                "items": {
+                  "$ref": "simple-types.json#/components/schemas/FhirIdFetchType"
+                }
               },
               "defaultProviderFhirIdFetchType": {
+                "$ref": "simple-types.json#/components/schemas/FhirIdFetchType"
+              },
+              "defaultTimezone": {
                 "type": "string"
               }
             },
@@ -129,6 +138,9 @@
                 "type": "string"
               },
               "mdaDefaultEnvironment": {
+                "type": "boolean"
+              },
+              "defaultTimezone": {
                 "type": "string"
               }
             }

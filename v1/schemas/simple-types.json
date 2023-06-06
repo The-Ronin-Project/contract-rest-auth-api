@@ -14,6 +14,14 @@
           "SOF",
           "MDA"
         ]
+      },
+      "FhirIdFetchType": {
+        "type": "string",
+        "enum": [
+          "SUB",
+          "USER",
+          "USER_PROV_FHIR_ID"
+        ]
       }
     }
   }

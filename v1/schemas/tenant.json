@@ -5,7 +5,7 @@
         "type": "object",
         "description": "A Tenant of a subtype.",
         "discriminator": {
-          "propertyName": "tenantType",
+          "propertyName": "type",
           "mapping": {
             "MOCK": "#/components/schemas/MockTenant",
             "OPENID": "#/components/schemas/OpenIdTenant",
@@ -62,9 +62,6 @@
               },
               "clientSecret": {
                 "type": "string"
-              },
-              "defaultTimezone": {
-                "type": "string"
               }
             },
             "required": [
@@ -96,6 +93,9 @@
               "redirectUrl": {
                 "type": "string"
               },
+              "jwkSetUrl": {
+                "type": "string"
+              },
               "clientId": {
                 "type": "string"
               },
@@ -119,6 +119,7 @@
               "scopes",
               "issUrl",
               "redirectUrl",
+              "jwkSetUrl",
               "clientId",
               "providerFhirIdFetchTypes",
               "defaultProviderFhirIdFetchType"

@@ -1,8 +1,26 @@
 {
+  "openapi": "3.0.2",
+  "paths": {},
+  "info": {
+    "title": "",
+    "version": ""
+  },
   "components": {
     "schemas": {
       "TenantId": {
         "description": "Unique identifier for tenants",
+        "type": "string"
+      },
+      "UserId": {
+        "description": "A ronin internal user id (NOT UDP)",
+        "type": "string"
+      },
+      "UdpId": {
+        "description": "A ronin UDP ID",
+        "type": "string"
+      },
+      "ExternalId": {
+        "description": "An external ID, like a FHIR id",
         "type": "string"
       },
       "TenantType": {
@@ -21,6 +39,22 @@
           "SUB",
           "USER",
           "USER_PROV_FHIR_ID"
+        ]
+      },
+      "UdpMappingCategory": {
+        "type": "string",
+        "enum": [
+          "PATIENT",
+          "PROVIDER"
+        ]
+      },
+      "ExternalIdType": {
+        "type": "string",
+        "enum": [
+          "FHIR_ID",
+          "MDA_NPI",
+          "MDA_PATIENT_ID",
+          "MDA_EPIC_USERID"
         ]
       }
     }

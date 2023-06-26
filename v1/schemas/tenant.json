@@ -1,4 +1,10 @@
 {
+  "openapi": "3.0.2",
+  "paths": {},
+  "info": {
+    "title": "",
+    "version": ""
+  },
   "components": {
     "schemas": {
       "Tenant": {

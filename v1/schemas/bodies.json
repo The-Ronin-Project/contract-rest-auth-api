@@ -1,4 +1,10 @@
 {
+  "openapi": "3.0.2",
+  "paths": {},
+  "info": {
+    "title": "",
+    "version": ""
+  },
   "components": {
     "schemas": {
       "ErrorResponse": {
@@ -56,6 +62,42 @@
               "error"
             ]
           }
+        ]
+      },
+      "UdpMappingQueryResponse": {
+        "title": "UdpMappingQueryResponse",
+        "description": "The response to a query of UDP Mappings",
+        "properties": {
+          "paging": {
+            "type": "object",
+            "properties": {
+              "cursor": {
+                "type": "string"
+              },
+              "limit": {
+                "type": "integer"
+              },
+              "previousCursor": {
+                "type": "string"
+              },
+              "nextCursor": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "limit"
+            ]
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "udp-mapping.json#/components/schemas/UdpMapping"
+            }
+          }
+        },
+        "required": [
+          "paging",
+          "data"
         ]
       }
     }

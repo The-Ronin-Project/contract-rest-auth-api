@@ -1,0 +1,94 @@
+{
+  "openapi": "3.0.2",
+  "paths": {},
+  "info": {
+    "title": "",
+    "version": ""
+  },
+  "components": {
+    "schemas": {
+      "PartialUdpMapping": {
+        "type": "object",
+        "description": "Partial UDP mapping for updating of elements that can be updated",
+        "properties": {
+          "userId": {
+            "$ref": "simple-types.json#/components/schemas/UserId"
+          },
+          "udpId": {
+            "$ref": "simple-types.json#/components/schemas/UdpId"
+          },
+          "name": {
+            "$ref": "#/components/schemas/UdpAssociatedName"
+          }
+        },
+        "required": [
+          "userId"
+        ]
+      },
+      "UdpMapping": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/PartialUdpMapping"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "tenantId": {
+                "$ref": "simple-types.json#/components/schemas/TenantId"
+              },
+              "udpMappingCategory": {
+                "$ref": "simple-types.json#/components/schemas/UdpMappingCategory"
+              },
+              "externalIdType": {
+                "$ref": "simple-types.json#/components/schemas/ExternalIdType"
+              },
+              "externalId": {
+                "$ref": "simple-types.json#/components/schemas/ExternalId"
+              }
+            },
+            "required": [
+              "userId",
+              "tenantId",
+              "udpMappingCategory",
+              "externalIdType",
+              "externalId"
+            ]
+          }
+        ]
+      },
+      "UdpAssociatedName": {
+        "type": "object",
+        "description": "A HumanName associated with a UDP mapping",
+        "properties": {
+          "fullName": {
+            "type": "string"
+          },
+          "familyName": {
+            "type": "string"
+          },
+          "givenName": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "prefix": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "suffix": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "fullName"
+        ]
+      }
+    }
+  }
+}

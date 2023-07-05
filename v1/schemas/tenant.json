@@ -28,6 +28,10 @@
           },
           "type": {
             "$ref": "simple-types.json#/components/schemas/TenantType"
+          },
+          "allowPatientDeletion": {
+            "type": "boolean",
+            "default": false
           }
         },
         "required": [

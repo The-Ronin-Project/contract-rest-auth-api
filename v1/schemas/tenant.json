@@ -123,6 +123,9 @@
               },
               "defaultTimezone": {
                 "type": "string"
+              },
+              "tokenIssUrl": {
+                "type": "string"
               }
             },
             "required": [

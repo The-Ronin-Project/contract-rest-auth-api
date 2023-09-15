@@ -99,6 +99,22 @@
           "paging",
           "data"
         ]
+      },
+      "MdaSimulationResponse": {
+        "title": "MdaSimulationResponse",
+        "description": "A simple response to an MDA Simulation request",
+        "properties": {
+          "queryString": {
+            "type": "string"
+          },
+          "launchUri": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "queryString",
+          "launchUri"
+        ]
       }
     }
   }

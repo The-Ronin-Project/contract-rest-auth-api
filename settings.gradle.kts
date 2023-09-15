@@ -20,7 +20,7 @@ dependencyResolutionManagement {
     }
     versionCatalogs {
         create("roningradle") {
-            from("com.projectronin.services.gradle:ronin-gradle-catalog:2.3.6")
+            from("com.projectronin.services.gradle:ronin-gradle-catalog:2.3.7-feature-fix-openapi-contract-code-generation-bug-SNAPSHOT")
         }
     }
 }

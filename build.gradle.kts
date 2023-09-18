@@ -1,8 +1,9 @@
+group = "com.projectronin.rest.contract"
+
 plugins {
     alias(roningradle.plugins.openapi.contract)
 }
 
-node {
-    download.set(true)
-    version.set("18.12.1")
+restContractSupport {
+    packageName.set("com.projectronin.services.auth.api")
 }

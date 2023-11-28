@@ -30,14 +30,14 @@
             "$ref": "simple-types.json#/components/schemas/TenantType"
           },
           "allowPatientDeletion": {
-            "type": "boolean",
-            "default": false
+            "type": "boolean"
           }
         },
         "required": [
           "id",
           "name",
-          "type"
+          "type",
+          "allowPatientDeletion"
         ]
       },
       "MockTenant": {

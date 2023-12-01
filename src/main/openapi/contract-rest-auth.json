@@ -27,6 +27,20 @@
       "description": "Integration testing endpoints"
     }
   ],
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  },
+  "security": [
+    {
+      "bearerAuth": []
+    }
+  ],
   "paths": {
     "/tenants": {
       "post": {
@@ -37,6 +51,7 @@
         "description": "Add a new Tenant to the Auth Service",
         "operationId": "addTenant",
         "requestBody": {
+          "required": true,
           "description": "Create a new Tenant in the Auth Service with a type",
           "content": {
             "application/json": {
@@ -240,6 +255,7 @@
           }
         ],
         "requestBody": {
+          "required": true,
           "description": "Update a Tenant in the Auth Service",
           "content": {
             "application/json": {
@@ -372,6 +388,7 @@
         "description": "Inserts a new UDP mapping.  Will fail if one exists already for the primary identifiers of tenant/category/type/external id.",
         "operationId": "createUdpMapping",
         "requestBody": {
+          "required": true,
           "content": {
             "application/json": {
               "schema": {
@@ -728,6 +745,7 @@
           }
         ],
         "requestBody": {
+          "required": true,
           "description": "Update a UDP mapping in the Auth Service",
           "content": {
             "application/json": {

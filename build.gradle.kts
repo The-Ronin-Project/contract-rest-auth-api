@@ -6,6 +6,4 @@ plugins {
 
 restContractSupport {
     packageName.set("com.projectronin.services.auth.api")
-    generatorType.set(com.projectronin.rest.contract.GeneratorType.OPENAPI_GENERATOR)
-    openApiGeneratorAdditionalProperties.put("enumPropertyNaming", "original")
 }

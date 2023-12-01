@@ -56,7 +56,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "schemas/tenant.json#/components/schemas/Tenant"
+                "oneOf": [
+                  {
+                    "$ref": "schemas/tenant.json#/components/schemas/MockTenant"
+                  },
+                  {
+                    "$ref": "schemas/tenant.json#/components/schemas/OpenIdTenant"
+                  },
+                  {
+                    "$ref": "schemas/tenant.json#/components/schemas/SofTenant"
+                  },
+                  {
+                    "$ref": "schemas/tenant.json#/components/schemas/MdaTenant"
+                  }
+                ]
               }
             }
           }
@@ -67,7 +80,20 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/tenant.json#/components/schemas/Tenant"
+                  "oneOf": [
+                    {
+                      "$ref": "schemas/tenant.json#/components/schemas/MockTenant"
+                    },
+                    {
+                      "$ref": "schemas/tenant.json#/components/schemas/OpenIdTenant"
+                    },
+                    {
+                      "$ref": "schemas/tenant.json#/components/schemas/SofTenant"
+                    },
+                    {
+                      "$ref": "schemas/tenant.json#/components/schemas/MdaTenant"
+                    }
+                  ]
                 }
               }
             }
@@ -140,7 +166,20 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/tenant.json#/components/schemas/Tenant"
+                  "oneOf": [
+                    {
+                      "$ref": "schemas/tenant.json#/components/schemas/MockTenant"
+                    },
+                    {
+                      "$ref": "schemas/tenant.json#/components/schemas/OpenIdTenant"
+                    },
+                    {
+                      "$ref": "schemas/tenant.json#/components/schemas/SofTenant"
+                    },
+                    {
+                      "$ref": "schemas/tenant.json#/components/schemas/MdaTenant"
+                    }
+                  ]
                 }
               }
             }
@@ -221,7 +260,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "schemas/tenant.json#/components/schemas/Tenant"
+                "oneOf": [
+                  {
+                    "$ref": "schemas/tenant.json#/components/schemas/MockTenant"
+                  },
+                  {
+                    "$ref": "schemas/tenant.json#/components/schemas/OpenIdTenant"
+                  },
+                  {
+                    "$ref": "schemas/tenant.json#/components/schemas/SofTenant"
+                  },
+                  {
+                    "$ref": "schemas/tenant.json#/components/schemas/MdaTenant"
+                  }
+                ]
               }
             }
           }
@@ -232,7 +284,20 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/tenant.json#/components/schemas/Tenant"
+                  "oneOf": [
+                    {
+                      "$ref": "schemas/tenant.json#/components/schemas/MockTenant"
+                    },
+                    {
+                      "$ref": "schemas/tenant.json#/components/schemas/OpenIdTenant"
+                    },
+                    {
+                      "$ref": "schemas/tenant.json#/components/schemas/SofTenant"
+                    },
+                    {
+                      "$ref": "schemas/tenant.json#/components/schemas/MdaTenant"
+                    }
+                  ]
                 }
               }
             }

@@ -72,6 +72,12 @@
               },
               "clientSecret": {
                 "type": "string"
+              },
+              "resourceServerId": {
+                "type": "string"
+              },
+              "supportsImpersonation": {
+                "type": "boolean"
               }
             },
             "required": [
@@ -155,6 +161,9 @@
                 "type": "boolean"
               },
               "defaultTimezone": {
+                "type": "string"
+              },
+              "overrideTenantId": {
                 "type": "string"
               }
             }

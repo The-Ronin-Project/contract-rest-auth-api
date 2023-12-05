@@ -75,6 +75,9 @@
               },
               "resourceServerId": {
                 "type": "string"
+              },
+              "supportsImpersonation": {
+                "type": "boolean"
               }
             },
             "required": [

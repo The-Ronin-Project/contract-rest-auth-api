@@ -9,5 +9,5 @@ restContractSupport {
 }
 
 dependencies {
-    openapi("com.projectronin.rest.contract:ronin-contract-shared-v1:1.0.1-DASH7243-SNAPSHOT@json")
+    openapi("com.projectronin.rest.contract:ronin-contract-shared-v1:1.0.1@json")
 }

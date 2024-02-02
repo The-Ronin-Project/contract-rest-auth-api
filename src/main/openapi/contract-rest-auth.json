@@ -103,7 +103,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }
@@ -113,7 +113,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }
@@ -123,7 +123,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }
@@ -133,7 +133,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }
@@ -189,7 +189,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }
@@ -199,7 +199,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }
@@ -209,7 +209,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }
@@ -219,7 +219,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }
@@ -229,7 +229,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }
@@ -307,7 +307,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }
@@ -317,7 +317,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }
@@ -327,7 +327,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }
@@ -337,7 +337,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }
@@ -347,7 +347,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }
@@ -413,7 +413,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }
@@ -423,7 +423,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }
@@ -433,7 +433,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }
@@ -443,7 +443,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }
@@ -542,7 +542,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }
@@ -552,7 +552,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }
@@ -562,7 +562,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }
@@ -572,7 +572,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }
@@ -582,7 +582,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }
@@ -652,7 +652,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }
@@ -662,7 +662,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }
@@ -672,7 +672,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }
@@ -682,7 +682,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }
@@ -692,7 +692,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }
@@ -771,7 +771,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }
@@ -781,7 +781,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }
@@ -791,7 +791,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }
@@ -801,7 +801,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }
@@ -811,7 +811,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }
@@ -1014,7 +1014,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }
@@ -1024,7 +1024,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }
@@ -1034,7 +1034,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }
@@ -1044,7 +1044,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }
@@ -1054,7 +1054,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }
@@ -1205,7 +1205,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }
@@ -1215,7 +1215,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }
@@ -1225,7 +1225,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }
@@ -1235,7 +1235,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }
@@ -1245,7 +1245,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "schemas/bodies.json#/components/schemas/ErrorResponse"
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
                 }
               }
             }

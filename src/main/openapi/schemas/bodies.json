@@ -7,63 +7,6 @@
   },
   "components": {
     "schemas": {
-      "ErrorResponse": {
-        "title": "ErrorResponse",
-        "description": "An error. Expect entries in the error field",
-        "allOf": [
-          {
-            "type": "object",
-            "properties": {
-              "error": {
-                "type": "array",
-                "minItems": 1,
-                "items": {
-                  "type": "object",
-                  "properties": {
-                    "httpStatus": {
-                      "type": "string"
-                    },
-                    "timestamp": {
-                      "type": "string",
-                      "format": "date-time"
-                    },
-                    "status": {
-                      "description": "The numeric http error code",
-                      "type": "integer"
-                    },
-                    "error": {
-                      "description": "HTTP reason phrase",
-                      "type": "string"
-                    },
-                    "exception": {
-                      "description": "Name of the exception thrown, if any",
-                      "type": "string"
-                    },
-                    "message": {
-                      "description": "Short information about the error",
-                      "type": "string"
-                    },
-                    "detail": {
-                      "description": "Long information about the error",
-                      "type": "string"
-                    },
-                    "stackTrace": {
-                      "description": "Stack trace of error",
-                      "type": "string"
-                    }
-                  },
-                  "required": [
-                    "status"
-                  ]
-                }
-              }
-            },
-            "required": [
-              "error"
-            ]
-          }
-        ]
-      },
       "UdpMappingQueryResponse": {
         "title": "UdpMappingQueryResponse",
         "description": "The response to a query of UDP Mappings",

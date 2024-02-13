@@ -32,6 +32,11 @@
           "allowPatientDeletion": {
             "type": "boolean",
             "default": false
+          },
+          "disablePatientMatch": {
+            "type": "boolean",
+            "default": false,
+            "description": "Disables searching proxy for this tenant during patient match."
           }
         },
         "required": [

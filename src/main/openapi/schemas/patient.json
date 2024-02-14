@@ -1,0 +1,38 @@
+{
+  "openapi": "3.0.2",
+  "paths": {},
+  "info": {
+    "title": "",
+    "version": ""
+  },
+  "components": {
+    "schemas": {
+      "PatientUdpMapping": {
+        "type": "object",
+        "description": "Partial UDP mapping for updating of elements that can be updated",
+        "properties": {
+          "tenantId": {
+            "$ref": "simple-types.json#/components/schemas/TenantId"
+          },
+          "udpId": {
+            "$ref": "simple-types.json#/components/schemas/UdpId"
+          },
+          "fhirId": {
+            "$ref": "simple-types.json#/components/schemas/ExternalId"
+          },
+          "phoneNumber": {
+            "type": "string",
+            "pattern": "^\\+[1-9]\\d{1,14}$",
+            "description": "An E.614-formatted phone number suitable for passing to auth0"
+          }
+        },
+        "required": [
+          "tenantId",
+          "udpId",
+          "fhirId",
+          "phoneNumber"
+        ]
+      }
+    }
+  }
+}

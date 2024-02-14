@@ -58,6 +58,18 @@
           "queryString",
           "launchUri"
         ]
+      },
+      "PatientUdpMappingResponse": {
+        "title": "PatientUdpMappingResponse",
+        "description": "The result of creating a patient mapping",
+        "properties": {
+          "userId": {
+            "$ref": "simple-types.json#/components/schemas/UserId"
+          }
+        },
+        "required": [
+          "userId"
+        ]
       }
     }
   }

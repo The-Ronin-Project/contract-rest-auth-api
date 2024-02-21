@@ -1257,7 +1257,7 @@
         }
       }
     },
-    "/patients": {
+    "/tenants/{tenantId}/patients/{patientId}/auth-registration": {
       "post": {
         "tags": [
           "Patient UDP Mapping"
@@ -1265,6 +1265,26 @@
         "summary": "Adds a patient UDP mapping",
         "description": "Inserts a new UDP mapping for a patient.  Will fail if one exists already for the primary identifiers of tenantId/fhirId.",
         "operationId": "createPatientUdpMapping",
+        "parameters": [
+          {
+            "name": "tenantId",
+            "in": "path",
+            "description": "Tenant Id",
+            "required": true,
+            "schema": {
+              "$ref": "schemas/simple-types.json#/components/schemas/TenantId"
+            }
+          },
+          {
+            "name": "patientId",
+            "in": "path",
+            "description": "Patient Id",
+            "required": true,
+            "schema": {
+              "$ref": "schemas/simple-types.json#/components/schemas/UdpId"
+            }
+          }
+        ],
         "requestBody": {
           "required": true,
           "content": {

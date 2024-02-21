@@ -1,0 +1,36 @@
+{
+  "openapi": "3.0.2",
+  "paths": {},
+  "info": {
+    "title": "",
+    "version": ""
+  },
+  "components": {
+    "schemas": {
+      "PatientUdpMapping": {
+        "type": "object",
+        "description": "Partial UDP mapping for updating of elements that can be updated",
+        "properties": {
+          "tenantId": {
+            "$ref": "simple-types.json#/components/schemas/TenantId"
+          },
+          "udpId": {
+            "$ref": "simple-types.json#/components/schemas/UdpId"
+          },
+          "fhirId": {
+            "$ref": "simple-types.json#/components/schemas/ExternalId"
+          },
+          "auth0UserId": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "tenantId",
+          "udpId",
+          "fhirId",
+          "auth0UserId"
+        ]
+      }
+    }
+  }
+}

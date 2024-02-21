@@ -25,6 +25,10 @@
     {
       "name": "Integration Testing",
       "description": "Integration testing endpoints"
+    },
+    {
+      "name": "Patient UDP Mapping",
+      "description": "Mapping of patient tenant/fhir to UDP"
     }
   ],
   "components": {
@@ -1232,6 +1236,108 @@
           },
           "404": {
             "description": "Not found. In this case indicating that the requested patient or label set does not generate a questionnaire.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Unexpected error processing request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tenants/{tenantId}/patients/{patientId}/auth-registration": {
+      "post": {
+        "tags": [
+          "Patient UDP Mapping"
+        ],
+        "summary": "Adds a patient UDP mapping",
+        "description": "Inserts a new UDP mapping for a patient.  Will fail if one exists already for the primary identifiers of tenantId/fhirId.",
+        "operationId": "createPatientUdpMapping",
+        "parameters": [
+          {
+            "name": "tenantId",
+            "in": "path",
+            "description": "Tenant Id",
+            "required": true,
+            "schema": {
+              "$ref": "schemas/simple-types.json#/components/schemas/TenantId"
+            }
+          },
+          {
+            "name": "patientId",
+            "in": "path",
+            "description": "Patient Id",
+            "required": true,
+            "schema": {
+              "$ref": "schemas/simple-types.json#/components/schemas/UdpId"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "schemas/patient.json#/components/schemas/PatientUdpMapping"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "A UDP Mapping was successfully created.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "schemas/bodies.json#/components/schemas/PatientUdpMappingResponse"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Resource already exists for tenantId/fhirId, or phone number already assigned to a different tenant/udpId",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request. Most likely failed validation. See response for details.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized. Most likely no token sent. See response for details.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": ".dependencies/ronin-contract-shared-v1/ronin-contract-shared-v1.json#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden. Authentication information sent does not allow caller to do this.",
             "content": {
               "application/json": {
                 "schema": {
